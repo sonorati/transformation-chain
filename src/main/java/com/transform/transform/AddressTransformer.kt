@@ -10,6 +10,6 @@ class AddressTransformer : AbstractTransformer() {
         outputPerson.outputAddress = OutputAddress(
                 street = inputPerson.inputAddress?.street
         )
-        super.transform(inputPerson, outputPerson)
+        next?.transform(inputPerson, outputPerson)
     }
 }
